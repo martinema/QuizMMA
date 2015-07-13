@@ -1,0 +1,5 @@
+ install dependencies:
+   $ cd quiz && npm install
+
+ run the app:
+   $ DEBUG=quiz ./bin/www
