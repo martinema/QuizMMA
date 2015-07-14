@@ -1,15 +1,15 @@
-var express = require('express');
+var express = require ('express');
 var router = express.Router();
 
-var quizController = require('../controllers/quiz_controller.js');
+var quizController = require ('../controllers/quiz_controller.js');
 
 //Página HOME
-router.get('/', function(req, res){
+router.get ('/', function(req, res){
 	res.render('index', {title: 'Quiz'});
 });
 
-router.get('/quizes/question', quizController.question);
-router.get('/quizes/answer', quizController.answer);
-router.get('/creditos', quizController.creditos);
+router.get ('/quizes/question', quizController.question);
+router.get ('/quizes/answer', quizController.answer);
+router.get ('/creditos', quizController.creditos);
 
 module_exports = router;
